@@ -1,0 +1,13 @@
+Package: EVsales
+Title: Analyze Global EV Sales and Trends with Interactive Tools
+Version: 0.0.0.9000
+Authors@R: 
+    person("Rong", "Xu", , "rxuu0059@student.monash.edu", role = c("aut", "cre"))
+Description: The EVsales package provides tools to explore and analyze electric vehicle sales and trends across various regions and powertrain types. It includes interactive visualizations through Shiny and easy-to-use functions for querying and processing data from the IEA Global EV Data Report.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
