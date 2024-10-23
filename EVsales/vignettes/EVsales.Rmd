@@ -1,0 +1,80 @@
+---
+title: "EV Sales Data Analysis"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{EV Sales Data Analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+```{r setup}
+library(EVsales)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(DT)
+```
+
+## Introduction
+This vignette demonstrates how to use the EVsales package to analyze electric vehicle (EV) sales data across various regions, powertrain types, and years. The dataset contains information on EV sales, EV stock, and the share of EVs in the market from 2010 to the present.
+
+The data can be accessed by loading the `ev_data` dataset from the `EVsales` package. This vignette will show you how to visualize trends in EV sales and powertrain distributions.
+
+## Loading EV Sales Data
+The EV sales data comes pre-loaded in the package, allowing you to begin analyzing and visualizing it without needing to load external files.
+```{r}
+# Load the EV sales data
+data(ev_data)
+
+# View the first few rows of the dataset
+head(ev_data)
+```
+The dataset includes the following columns:
+
+- year: The year of the sales data
+- Category: Whether the data is historical or predicted
+- Grouped_Region: The region where sales were recorded
+- powertrain: The type of EV powertrain (e.g., Battery Electric Vehicle - BEV, Plug-in Hybrid Electric Vehicle - PHEV)
+- value: The number of EVs sold
+- parameter: The type of measurement (e.g., EV sales, EV stock)
+
+## Visualizing EV Sales Over Time
+One of the main functions of the EVsales package is the ability to plot EV sales over time, filtered by region and powertrain type. The plot_ev_sales_over_time() function provides this capability.
+```{r}
+# Plot EV sales over time for all regions and powertrain types
+plot_ev_sales_over_time(ev_data)
+```
+
+You can also filter the data by a specific region or powertrain type. This can be useful if you're interested in seeing trends for a particular market or technology.
+```{r}
+# Plot EV sales over time for Europe and Battery Electric Vehicles (BEV)
+plot_ev_sales_over_time(ev_data, region = "Europe", powertrain = "BEV")
+```
+
+## Exploring Powertrain Distribution
+You can visualize the distribution of different powertrain types using the plot_powertrain_distribution() function. This is useful to see which EV technologies are dominating the market.
+```{r}
+# Plot the worldwide distribution of powertrain types
+plot_powertrain_distribution(ev_data)
+```
+
+## Data Table: Viewing the Raw Data
+If you want to view the raw data used in these plots, you can use the view_ev_sales_data() function, which presents the data in an interactive table.
+```{r}
+# View the EV sales data in a table
+view_ev_sales_data(ev_data)
+```
+
+## Conclusion
+The `EVsales` package provides a comprehensive toolkit for analyzing and visualizing global electric vehicle sales data. Whether you're exploring sales trends, comparing regions, or looking at the rise of different powertrain technologies, this package makes it easy to gain insights into the growing EV market.
+
+For more detailed usage examples, check out the function documentation, or try customizing the included functions to suit your needs!

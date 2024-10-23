@@ -27,6 +27,5 @@ ev_data
 }
 \description{
 A subset of data from the IEA Global EV Data Report summarizing electric vehicle sales and trends across various regions and years.
-Report ...
 }
 \keyword{datasets}

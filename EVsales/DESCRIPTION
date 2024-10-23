@@ -3,7 +3,8 @@ Title: Analyze Global EV Sales and Trends with Interactive Tools
 Version: 0.0.0.9000
 Authors@R: 
     person("Rong", "Xu", , "rxuu0059@student.monash.edu", role = c("aut", "cre"))
-Description: The EVsales package contains the electric vehicle sales data across various regions and powertrain types
+Description: This package provides functions and a Shiny app to analyze and visualize electric vehicle (EV) sales data globally. 
+             The dataset includes EV sales by region, year, and powertrain type.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -11,12 +12,14 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
-Imports: 
-    dplyr,
+Imports:
+    shiny,
+    plotly,
     ggplot2,
-    shiny
+    dplyr,
+    DT
 Suggests: 
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-
+URL: https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-xurong980623/

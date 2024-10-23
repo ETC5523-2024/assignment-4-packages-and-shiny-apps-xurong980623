@@ -1,7 +1,6 @@
 #' IEA Global EV Data
 #'
 #' A subset of data from the IEA Global EV Data Report summarizing electric vehicle sales and trends across various regions and years.
-#' Report ...
 #'
 #' @format ## `ev_data`
 #' A data frame with 10042 rows and 6 columns:
