@@ -7,3 +7,14 @@
 <!-- badges: end -->
 
 Hi,welcome to go through my first R package!
+
+The R-package is called “EVsales” and you can use the dataset inside it
+and have some explorations about the data.
+
+The R-package and shiny apps are in the folder “EVsales”, please see
+more info inside it.
+
+You can see the pkgdown site through the following link
+<https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-xurong980623/>
+
+Hope you enjoy the package, cheers!
