@@ -7,9 +7,9 @@
 #' @param powertrain A character string specifying the powertrain type (e.g., "BEV", "PHEV"). Default is "All".
 #'
 #' @importFrom ggplot2 ggplot aes geom_line labs theme_minimal
+#' @import DT
 #' @return A ggplot2 object showing the EV sales over time as a bar plot.
 #' @examples
-#' plot_ev_sales_over_time()
 #' plot_ev_sales_over_time(ev_data)
 #' @export
 plot_ev_sales_over_time <- function(data = ev_data, region = "All", powertrain = "All") {
@@ -48,7 +48,6 @@ plot_ev_sales_over_time <- function(data = ev_data, region = "All", powertrain =
 #'
 #' @return A ggplot2 object showing the distribution of powertrain types.
 #' @examples
-#' plot_powertrain_distribution()
 #' plot_powertrain_distribution(ev_data)
 #' @export
 plot_powertrain_distribution <- function(data = ev_data) {
@@ -76,7 +75,6 @@ plot_powertrain_distribution <- function(data = ev_data) {
 #'
 #' @return A datatable object showing the EV sales data.
 #' @examples
-#' view_ev_sales_data()
 #' view_ev_sales_data(ev_data)
 #' @export
 view_ev_sales_data <- function(data = ev_data) {

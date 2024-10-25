@@ -16,6 +16,5 @@ A datatable object showing the EV sales data.
 This function renders an interactive data table for exploring the EV sales data.
 }
 \examples{
-view_ev_sales_data()
 view_ev_sales_data(ev_data)
 }

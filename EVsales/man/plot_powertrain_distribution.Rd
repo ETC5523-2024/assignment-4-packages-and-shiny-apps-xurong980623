@@ -16,6 +16,5 @@ A ggplot2 object showing the distribution of powertrain types.
 This function generates a bar plot showing the distribution of EV sales by powertrain type.
 }
 \examples{
-plot_powertrain_distribution()
 plot_powertrain_distribution(ev_data)
 }

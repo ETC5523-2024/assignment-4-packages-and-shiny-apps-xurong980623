@@ -20,6 +20,5 @@ A ggplot2 object showing the EV sales over time as a bar plot.
 This function generates a bar plot showing EV sales over time for a specific region and powertrain type.
 }
 \examples{
-plot_ev_sales_over_time()
 plot_ev_sales_over_time(ev_data)
 }
