@@ -17,7 +17,8 @@ Imports:
     plotly,
     ggplot2,
     dplyr,
-    DT
+    DT,
+    shinydashboard
 Suggests: 
     knitr,
     rmarkdown
